@@ -1,9 +1,14 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Navbar from "./components/Navbar";
+import TaskList from "./pages/TaskList";
+
 function App() {
   return (
-    <div>
-      <h1>Task Management Application</h1>
-      <p>Frontend Setup Completed Successfully</p>
-    </div>
+    <>
+      <Navbar />
+      <TaskList />
+    </>
   );
 }
 
