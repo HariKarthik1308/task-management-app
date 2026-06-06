@@ -1,6 +1,6 @@
 import React from "react";
 
-function TaskItem({ task }) {
+function TaskItem({ task, onDelete }) {
   return (
     <div className="card mb-3">
       <div className="card-body">
@@ -13,11 +13,10 @@ function TaskItem({ task }) {
         </span>
 
         <div className="mt-3">
-          <button className="btn btn-warning me-2">
-            Edit
-          </button>
-
-          <button className="btn btn-danger">
+          <button
+            className="btn btn-danger"
+            onClick={() => onDelete(task._id)}
+          >
             Delete
           </button>
         </div>

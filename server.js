@@ -6,6 +6,11 @@ const connectDB = require("./config/db");
 const taskRoutes = require("./routes/taskRoutes");
 const authRoutes = require("./routes/authRoutes");
 
+
+
+
+
+
 dotenv.config();
 
 connectDB();
